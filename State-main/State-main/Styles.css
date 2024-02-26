@@ -1,0 +1,294 @@
+/* Master styles */
+
+body {
+    margin: 10px;
+    background-color: #ff8800;
+    color: white;
+    font-family: 'Crimson Text', serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Top Nav Bar Styles */
+
+.full {
+    background: url("https://images.unsplash.com/photo-1443616839562-036bb2afd9a2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80");
+    height: 150px;
+    width: auto;
+    background-size: cover;
+    background-position: top;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 38px;
+}
+
+.nav-bar-left {
+    display: flex;
+    padding: 30px;
+}
+
+.nav-bar>.nav-bar-left>div {
+    margin-right: 20px;
+    font-size: 2em;
+}
+
+.nav-bar-link a {
+    color: ivory;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-bar-link:hover {
+    border-bottom: 2px solid #ff8000;
+}
+
+.nav-bar-link a:hover {
+    color:#ff8000;
+}
+
+.active-nav-bar-link {
+    border-bottom: 2px solid #ff8000;
+}
+
+.active-nav-bar-link a {
+    color: #ff8000 !important;
+    font-weight: bolder;
+}
+
+
+/* homepage body */
+
+.home-body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: deepskyblue;
+    text-decoration: underline;
+}
+
+h2 {
+    color: deepskyblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    color: deepskyblue;
+    text-decoration: underline;
+    font-size: 2rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul {
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+}
+
+li {
+    text-align: left;
+}
+
+.content-part {
+    padding: 30px;
+    font-size: larger;
+    text-align: center;
+}
+
+
+/* bottom nav bar for contact */
+
+.nav-contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nav-contact-link {
+    font-size: 2rem;
+    position: relative;
+    bottom: 0;
+    margin: auto;
+}
+
+.social-icon a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-icon :hover {
+    color: deepskyblue;
+}
+
+.full-about {
+    text-align: center;
+}
+
+.cv {
+    text-align: centre;
+}
+
+.cv a {
+    color: deepskyblue;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* project page 
+
+.to-do-list {
+    border: 2px dashed white;
+    padding: 20px;
+}
+
+*/
+
+.to-do-list>.to-do-list-app {
+    color: white;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/*
+.game-mode {
+    border: 2px dashed white;
+    padding: 20px;
+}
+*/
+
+.game-mode>.js-game {
+    color: white;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+    
+.content>.header {
+    color: aqua;
+    font-size: 2em;
+}
+
+.content>.description {
+    color: grey;
+}
+
+/* about page */
+
+img {
+    border-radius: 50%;
+    padding: 30px;
+}
+
+
+/* all pages */
+
+footer {
+    margin-top: auto;
+}
+
+/* Devices -> mobile */
+
+@media only screen and (max-width: 600px) {
+    .to-do-list {
+        border: 2px dashed white;
+        padding: 20px;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .game-mode {
+        border: 2px dashed white;
+        padding: 20px;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Devices -> portrait tablets */
+
+@media only screen and (min-width: 600px) {
+    .to-do-list {
+        border: 2px dashed white;
+        padding: 20px;
+        margin-left: 10em;
+        margin-right: 10em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .game-mode {
+        border: 2px dashed white;
+        padding: 20px;
+        margin-left: 10em;
+        margin-right: 10em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Devices -> landscape tablets */
+
+@media only screen and (min-width: 768px) {
+    .to-do-list {
+        border: 2px dashed white;
+        padding: 20px;
+        margin-left: 15em;
+        margin-right: 15em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .game-mode {
+        border: 2px dashed white;
+        padding: 20px;
+        margin-left: 15em;
+        margin-right: 15em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Devices -> laptops/pc tablets */
+
+@media only screen and (min-width: 992px) {
+    .to-do-list {
+        border: 2px dashed white;
+        padding: 20px;
+        margin-left: 28em;
+        margin-right: 28em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .game-mode {
+        border: 2px dashed white;
+        padding: 20px;
+        margin-left: 28em;
+        margin-right: 28em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
